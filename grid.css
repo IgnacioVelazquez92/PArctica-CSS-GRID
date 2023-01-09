@@ -116,5 +116,13 @@ img {
   /*grid 4c x 3r*/
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(3,200px);
+  grid-template-rows: repeat(3,150px);
+}
+
+.grid-flow{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(3,150px);
+  grid-auto-flow: row;
+  grid-auto-rows: 200px;
 }
