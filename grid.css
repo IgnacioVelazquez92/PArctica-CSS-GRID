@@ -172,4 +172,48 @@ img {
   background-color: cyan;
   grid-column: 2/4;
   grid-row: 2/4;
+  opacity: .50;
+}
+
+.grid-order{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+
+.grid-order .item:nth-child(1){
+  order: 1;
+
+}
+
+.grid-align{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(2,200px);
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-align-tracks{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(2,200px);
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.grid-min-max {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(100px,150px));
+  grid-template-rows: repeat(2,minmax(max-content,1fr));
+}
+
+.grid-repeat{
+  display: grid;
+  grid-template-columns: repeat(1,1fr 1fr 10% 300px);
+}
+
+.grid-dynamics{
+  display: grid;
+  grid-template-columns: repeat(4,100px);
 }
