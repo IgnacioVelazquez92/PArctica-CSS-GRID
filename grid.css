@@ -59,6 +59,13 @@ img {
   border: medium solid #999;
 }
 
+.sub-item{
+  padding: 1rem;
+  font-size: 1.25rem;
+  border: medium solid #ccc;
+  background-color: #ddd;
+}
+
 .grid-explicit{
   display: grid;
   grid-template-columns:1fr repeat(2,30%) 1fr;
@@ -215,5 +222,17 @@ img {
 
 .grid-dynamics{
   display: grid;
-  grid-template-columns: repeat(4,100px);
+  grid-template-columns: repeat(auto-fill,15vh);
+}
+
+.grid-responsive{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 5px;
+}
+
+.grid-nested{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
 }
